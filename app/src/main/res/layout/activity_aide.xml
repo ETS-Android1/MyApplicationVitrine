@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnValide"
+            style="@style/DigitBtnStyle"
+            android:layout_marginStart="250dp"
+            android:background="@drawable/rounded_corner"
+            android:onClick="actValide"
+            android:text="@string/valide" />
+
+        <EditText
+            android:id="@+id/eTxtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/text_hint_message"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/eTxtSubjet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="20"
+                android:hint="@string/text_hint_sub"
+                android:inputType="textEmailSubject"
+                android:minHeight="48dp"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/Subjet"
+                style="@style/DigitTxtContactStyle"
+                android:text="@string/subjet" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/eTxtName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/text_hint_info"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/Nom"
+                style="@style/DigitTxtContactStyle"
+                android:text="@string/nom" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/eTxtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/text_hint_info"
+                android:inputType="textShortMessage|textEmailAddress"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/Email"
+                style="@style/DigitTxtContactStyle"
+                android:text="@string/email" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAideMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            tools:text="@tools:sample/lorem" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnRetour"
+                android:layout_width="69dp"
+                android:layout_height="71dp"
+                android:background="@drawable/icons8_home_64"
+                android:onClick="appelHome"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="347dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="casual"
+        android:text="@string/aide"
+        android:textAllCaps="true"
+        android:textColor="@color/gris"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

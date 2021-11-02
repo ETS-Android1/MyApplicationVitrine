@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="82dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imBtnAide"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="336dp"
+                android:layout_marginRight="336dp"
+                android:layout_marginStart="336dp"
+                android:onClick="apelAide"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/icons8_question_mark_64"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvMenu"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="casual"
+                android:text="@string/bienvenue"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/gris"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="none" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/imageBtnPain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:onClick="apelPain"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/baguette_fran_aise_inratable___gourmandise_assia"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/tvPain"
+                    style="@style/DigitImBtnStyle"
+                    android:onClick="apelPain"
+                    android:text="@string/le_pain" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageBtnViennois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:onClick="apelViennois"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/j_ai_fait_mes_croissants_au_beurre___la_maison_"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/tvViennois"
+                    style="@style/DigitImBtnStyle"
+                    android:onClick="apelViennois"
+                    android:text="@string/la_viennoisserie" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageBtnPatisserie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:onClick="apelPatisserie"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/screen_shot_2020_07_09_at_12_45_53_pm_900x"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/tvPatisserie"
+                    style="@style/DigitImBtnStyle"
+                    android:onClick="apelPatisserie"
+                    android:text="@string/la_patisserie" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFavoris"
+                    style="@style/DigitBtnStyle"
+                    android:layout_width="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:text="@string/favoris" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imBtnAide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaPatisserie">
+
+
+    <Button
+        android:id="@+id/btnBaguette"
+        style="@style/DigitBtnStyle"
+        android:layout_width="145dp"
+        android:layout_height="53dp"
+        android:onClick="appelProdChesse"
+        android:text="Chesse Cake"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toEndOf="@+id/imChesseCake"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <Button
+        android:id="@+id/btnPainTradition"
+        style="@style/DigitBtnStyle"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="196dp"
+        android:layout_marginStart="50dp"
+        android:onClick="appelProdTarte"
+        android:text="Tarte tiramisu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imTarte"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRetour"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/icons8_home_64"
+        android:onClick="apelHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imBtnAide_Pain"
+        android:layout_width="41dp"
+        android:layout_height="48dp"
+        android:onClick="appelAide"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_question_mark_64"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <ImageView
+        android:id="@+id/imChesseCake"
+        android:layout_width="200dp"
+        android:layout_height="183dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223"
+        app:srcCompat="@drawable/biscoff_cheesecake" />
+
+    <ImageView
+        android:id="@+id/imTarte"
+        android:layout_width="150dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="137dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tartetiramisu2_600x600" />
+
+
+    <TextView
+        android:id="@+id/tvTitreCategorie"
+        style="@style/DigitTxtTitreStyle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/categorie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaViennoisserie">
+
+    <Button
+        android:id="@+id/btnRetour"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/icons8_home_64"
+        android:onClick="apelHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnCroissant"
+        style="@style/DigitBtnStyle"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="441dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="114dp"
+        android:onClick="appelProdCroissant"
+        android:text="@string/croissant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPainAuRaisin"
+        style="@style/DigitBtnStyle"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="278dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="277dp"
+        android:onClick="appelProdPainRaisin"
+        android:text="@string/pain_au_raisin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPainAuChocolate"
+        style="@style/DigitBtnStyle"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="129dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="426dp"
+        android:onClick="appelProdPainChocolate"
+        android:text="@string/pain_au_chocolate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imBtnAide_Vn"
+        android:layout_width="41dp"
+        android:layout_height="48dp"
+        android:onClick="appelAide"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_question_mark_64"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imCroissant"
+        android:layout_width="276dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="74dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/j_ai_fait_mes_croissants_au_beurre___la_maison_" />
+
+    <ImageView
+        android:id="@+id/imPainAuChocolate"
+        android:layout_width="198dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="370dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/pains_au_chocolat_ou_chocolatines_comme_chez_le_boulanger" />
+
+    <ImageView
+        android:id="@+id/imPainAuRaisin"
+        android:layout_width="196dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="238dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pain_au_raisin" />
+
+    <TextView
+        android:id="@+id/tvTitreCategorie"
+        style="@style/DigitTxtTitreStyle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/categorie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

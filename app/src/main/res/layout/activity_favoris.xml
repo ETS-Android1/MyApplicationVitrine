@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favoris">
+
+    <Button
+        android:id="@+id/btnRetour"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/icons8_home_64"
+        android:onClick="appelHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imBtnAide_Fa"
+        android:layout_width="41dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="370dp"
+        android:contentDescription="@string/aide"
+        android:onClick="appelAide"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_question_mark_64"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tlListProduitFavoris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/DigitTxtTitreStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:background="@drawable/cell_shape"
+                    android:padding="15dp"
+                    android:text="@string/favoris"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvNomProduit"
+                    style="@style/DigitTxtTableTitreStyle"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nom_produit" />
+
+                <TextView
+                    android:id="@+id/tvPrixdProduit"
+                    style="@style/DigitTxtTableTitreStyle"
+                    android:text="@string/prix" />
+
+                <TextView
+                    android:id="@+id/tvAjoutePanier"
+                    style="@style/DigitTxtTableTitreStyle"
+                    android:text="@string/panier" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvProduit"
+                    style="@style/TableColumStyle0"
+                    android:text="@string/nom_produit" />
+
+                <TextView
+                    android:id="@+id/tvPrixProd"
+                    style="@style/TableColumStyle1"
+                    android:text="@string/prix" />
+
+                <CheckBox
+                    android:id="@+id/cbAjoutePanier"
+                    style="@style/TableColumStyle1"
+                    android:text="@string/ajouter_panier"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+            <View
+                android:layout_height="3dip"
+                android:layout_width="match_parent"
+                android:background="@color/gris"/>
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

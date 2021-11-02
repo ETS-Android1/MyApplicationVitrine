@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MyApplicationVitrine</string>
+    <string name="le_pain">Le Pain</string>
+    <string name="la_viennoisserie">La Viennoisserie</string>
+    <string name="la_patisserie">La Patisserie</string>
+    <string name="bienvenue">Bienvenue chez LA RELIGIEUSE</string>
+    <string name="categorie">Nom du Categorie</string>
+    <string name="aide">Aide</string>
+    <string name="valide">Valide</string>
+    <string name="text_hint_message">Entrez votre message</string>
+    <string name="text_hint_sub">Entrez votre subjet</string>
+    <string name="text_hint_info">Entrez votre information</string>
+    <string name="nom">Nom :   </string>
+    <string name="email">Email : </string>
+    <string name="subjet">Subjet :</string>
+    <string name="nom_produit">Nom du Produit</string>
+    <string name="list_ingredients">List des ingredients</string>
+    <string name="prix">Prix</string>
+    <string name="favoris">Favoris</string>
+    <string name="panier">Panier</string>
+    <string name="ajouter_panier">Ajoutez au panier</string>
+    <string name="btn_favoris">Ajouter au Favoris</string>
+    <string name="croissant">Croissant</string>
+    <string name="pain_au_raisin">Pain au raisin</string>
+    <string name="pain_au_chocolate">Pain au chocolate</string>
+    <string name="baguette">Baguette</string>
+    <string name="pain_tradition">Pain tradition</string>
+</resources>

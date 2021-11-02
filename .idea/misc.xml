@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/drawable/cell_shape.xml" value="0.1" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/drawable/cell_shape_color_gris_pastel.xml" value="0.215625" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/drawable/round_outline.xml" value="0.1" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/drawable/rounded_corner.xml" value="0.1" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/drawable/rounded_corner_right.xml" value="0.33214285714285713" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/drawable/rounded_corners.xml" value="0.1125" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/drawable/rounded_corners2.xml" value="0.1125" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/drawable/rounded_corners_left.xml" value="0.1" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_actlaucher.xml" value="0.20102564102564102" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_aide.xml" value="0.18" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_favoris.xml" value="0.22" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_la_baguette.xml" value="0.18" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_la_patisserie.xml" value="0.25" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_la_patisserie2.xml" value="0.11302083333333333" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_la_tarte_tiramisu.xml" value="0.16" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_la_viennoisserie.xml" value="0.14" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_le_chesse_cake.xml" value="0.14" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_le_croissant.xml" value="0.11574074074074074" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_le_pain_au_chocolate.xml" value="0.16" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_le_pain_au_raisin.xml" value="0.22" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_le_pain_tradition.xml" value="0.16" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_le_pains.xml" value="0.16" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_le_produit.xml" value="0.11302083333333333" />
+        <entry key="..\:/Workspace/MyApplicationVitrine/app/src/main/res/layout/activity_main.xml" value="0.17068811438784628" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

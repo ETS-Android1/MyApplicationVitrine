@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeProduit">
+
+
+    <Button
+        android:id="@+id/btnAddFavoris"
+        style="@style/DigitBtnStyle"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="137dp"
+        android:layout_marginTop="418dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="ajouteFavoris"
+        android:text="@string/btn_favoris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRetour"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/icons8_home_64"
+        android:onClick="appelHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imBtnAide_Produit"
+        android:layout_width="41dp"
+        android:layout_height="48dp"
+        android:onClick="appelAide"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_question_mark_64"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imProduit"
+        android:layout_width="173dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="128dp"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvTitreProduit"
+        style="@style/DigitTxtTitreStyle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/nom_produit"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPrixProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="132dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/orange"
+        android:rotation="12"
+        android:text="@string/prix"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIngredientsProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/list_ingredients"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
